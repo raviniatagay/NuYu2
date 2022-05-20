@@ -78,14 +78,14 @@
             <div class="col">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Contact</li>
+                    <li class="breadcrumb-item active">Your Cart</li>
                 </ol>
-                <h2>Contact Us</h2>
+                <h2>Your Cart</h2>
                 <hr />
             </div>
         </div>
 
-        <div class="row row-content align-items-center">
+        <!--<div class="row row-content align-items-center">
             <div class="col-sm-4">
                 <h5>Our Address</h5>
                 <address>
@@ -98,13 +98,13 @@
 			    <a role="button" class="btn btn-link" href="tel:+18475551234"><i class="fa fa-phone"></i> 1-847-555-1234</a><br />
             	<a role="button" class="btn btn-link" href="mailto:info@nuyugyms.co"><i class="fa fa-envelope-o"></i>info@nuyugyms.co</a>
             </div>
-        </div>
+        </div>-->
 
         <div class="row row-content">
-            <div class="col-12">
+            <!--<div class="col-12">
                 <h2>Send us your Feedback</h2>
                 <hr />
-            </div>
+            </div>-->
             <div class="col-md-10">
                 <form>
                     <div class="form-group row">
@@ -134,28 +134,37 @@
                             <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <div class="col offset-md-2">
-                            May we contact you?
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
-                                <label for="contactYes" class="form-check-label">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
-                                <label for="contactNo" class="form-check-label">No</label>
-                            </div>
+                    <h3>Credit Card Information</h3>
+                    <div class="form-group row">                        
+                        <label for="ccName" class="col-md-2 col-form-label">Name on Card</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="ccName" name="ccName" placeholder="Name on Card" />
+                        </div>
+                    </div>
+                    <div class="form-group row">                        
+                        <label for="ccNum" class="col-md-2 col-form-label">Credit Card Number</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="ccNum" name="ccNum" placeholder="Credit Card Number" />
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
-                        <div class="col-md-10">
-                            <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                        <label for="secCode" class="col-md-2 col-form-label">Security Code</label>
+                        <div class="col-5 col-md-3">
+                            <input type="text" class="form-control" id="secCode" name="secCode" placeholder="Security Code" />
+                        </div>                        
+                    </div>
+                    <div class="form-group row">
+                        <label for="mmExp" class="col-md-2 col-form-label">Expiration Date</label>
+                        <div class="col-5 col-md-3">
+                            <input type="text" class="form-control" id="mmExp" name="mmExp" placeholder="MM" />
+                        </div>
+                        <div class="col-5 col-md-3">
+                            <input type="text" class="form-control" name="yyExp" placeholder="YY" />
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="offset-md-2 col-md-10">
-                            <a data-toggle="modal" data-target="#searchModal"><button type="submit" class="btn btn-primary">Send Feedback</button></a>
+                            <a data-toggle="modal" data-target="#searchModal"><button type="submit" class="btn btn-primary">Purchase</button></a>
                         </div>
                     </div>
                 </form>
